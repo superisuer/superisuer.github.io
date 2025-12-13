@@ -1,75 +1,94 @@
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    font-family: 'Comic Sans';
-    line-height: 1;
-    color: #333;
-    min-height: 10vh;
-    padding: 10px;
+    background: #c0c0c0;
+    font-family: "Times New Roman", serif;
+    color: #000000;
+    margin: 20px;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAD0lEQVQYV2NkYGAwBkAADwABU3GTgQAAAABJRU5ErkJggg==');
 }
 
 main {
     max-width: 800px;
     margin: 0 auto;
-    background: rgba(255, 255, 255, 0.95);
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    background: #ffffff;
+    border: 2px solid #000000;
+    padding: 20px;
 }
 
 h1 {
-    color: #27ae60;
-    font-size: 1.4rem;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000080;
+    background: #d3d3d3;
+    padding: 10px;
+    border: 1px solid #000000;
     text-align: center;
-    margin-bottom: 30px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-    background: linear-gradient(45deg, #27ae60, #2ecc71);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    margin-bottom: 20px;
 }
 
 h2 {
-    color: #2980b9;
-    font-size: 1rem;
-    margin: 40px 0 20px 0;
-    border-left: 5px solid #3498db;
-    padding-left: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #800000;
+    background: #f0f0f0;
+    padding: 8px;
+    border: 1px solid #808080;
+    margin: 30px 0 15px 0;
 }
 
 p {
-    font-size: 0.6rem;
-    margin-bottom: 20px;
-    padding: 15px;
-    background: #f8f9fa;
-    border-radius: 8px;
-    border-left: 4px solid #95a5a6;
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    text-align: justify;
 }
 
 a {
     display: block;
-    background: #e74c3c;
-    color: white;
-    text-decoration: none;
-    padding: 12px 20px;
-    margin: 10px 0;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-    font-weight: 600;
+    color: #0000ff;
+    text-decoration: underline;
+    font-weight: bold;
+    margin: 8px 0;
+    padding: 5px;
+}
+
+a:visited {
+    color: #800080;
 }
 
 a:hover {
-    background: #c0392b;
-    transform: translateX(10px);
+    color: #ff0000;
+    background: #ffff00;
 }
 
 br {
+    margin: 5px 0;
+}ration: none;
+    margin: 3px 0;
+    padding: 1px;
+    font-size: 11px;
+}
+
+a:visited {
+    color: #990000;
+}
+
+a:hover {
+    color: #000000;
+    background: #ff0000;
+}
+}
+
+
+
+m: translateX(10px);
+}
+
+
+
+
+
+
+ {
     margin: 5px 0;
 }
 
