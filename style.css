@@ -1,70 +1,128 @@
-body {
-    background: linear-gradient(45deg, #ff00cc, #00ccff, #ffcc00, #cc00ff, #ff0066, #66ff00);
-    background-size: 600% 600%;
-    animation: psychoticSpin 3s linear infinite;
+
+* {
     margin: 0;
-    padding: 50px;
-    font-family: 'Papyrus', 'Comic Sans MS', fantasy;
-    overflow-x: hidden;
-    min-height: 100vh;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-h1, h2 {
-    color: #00ff00;
-    text-shadow: 0 0 15px #00ff00, 0 0 30px #00ff00, 0 0 45px #00ff00;
-    font-size: 5em;
-    margin: 20px 0;
-    animation: textPulse 2s ease-in-out infinite;
-    letter-spacing: 5px;
-    background: linear-gradient(90deg, #ff0000, #ffff00, #00ffff, #ff00ff, #ff0000);
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #27ae60;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(45deg, #27ae60, #2ecc71);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    background-size: 400% 400%;
-    animation: rainbowText 4s linear infinite;
 }
 
-a {
-    display: inline-block;
-    animation: crazyWobble 1.2s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
-    text-decoration: none;
-    color: #ff0066;
-    font-weight: 900;
-    font-size: 2em;
-    text-shadow: 3px 3px 0 #00ffff, -3px -3px 0 #ffff00;
-    padding: 10px;
-    border: 4px dashed #ff00ff;
-    background: repeating-linear-gradient(45deg, transparent, transparent 10px, #00ff00 10px, #00ff00 20px);
+h2 {
+    color: #2980b9;
+    font-size: 2rem;
+    margin: 40px 0 20px 0;
+    border-left: 5px solid #3498db;
+    padding-left: 15px;
 }
 
 p {
-    font-size: 2em;
-    line-height: 1.8;
-    background: linear-gradient(90deg, #ff1493 0%, #7fff00 25%, #00bfff 50%, #ff4500 75%, #da70d6 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    background-size: 400% 400%;
-    animation: pRainbow 5s ease infinite;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-    transform: skew(-10deg, 2deg);
-    padding: 20px;
-    border: 8px double #00ffff;
-    background-color: rgba(255,255,255,0.1);
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #95a5a6;
 }
 
-@keyframes psychoticSpin {
-    0% { background-position: 0% 0% }
-    25% { background-position: 100% 0% }
-    50% { background-position: 100% 100% }
-    75% { background-position: 0% 100% }
-    100% { background-position: 0% 0% }
+a {
+    display: block;
+    background: #e74c3c;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-weight: 600;
 }
 
-@keyframes rainbowText {
-    0% { background-position: 0% 50% }
-    50% { background-position: 100% 50% }
-    100% { background-position: 0% 50% }
+a:hover {
+    background: #c0392b;
+    transform: translateX(10px);
+}
+
+br {
+    margin: 5px 0;
+}
+
+/* Мобильная версия */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    main {
+        padding: 20px;
+        margin: 10px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    
+    h2 {
+        font-size: 1.7rem;
+        margin: 30px 0 15px 0;
+    }
+    
+    p {
+        font-size: 1rem;
+        padding: 12px;
+    }
+    
+    a {
+        padding: 15px;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    main {
+        padding: 15px;
+    }
+    
+    body {
+        padding: 5px;
+    }
+}
+round-position: 0% 50% }
 }
 
 @keyframes crazyWobble {
