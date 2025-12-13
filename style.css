@@ -1,0 +1,92 @@
+body {
+    background: linear-gradient(45deg, #ff00cc, #00ccff, #ffcc00, #cc00ff, #ff0066, #66ff00);
+    background-size: 600% 600%;
+    animation: psychoticSpin 3s linear infinite;
+    margin: 0;
+    padding: 50px;
+    font-family: 'Papyrus', 'Comic Sans MS', fantasy;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+h1, h2 {
+    color: #00ff00;
+    text-shadow: 0 0 15px #00ff00, 0 0 30px #00ff00, 0 0 45px #00ff00;
+    font-size: 5em;
+    margin: 20px 0;
+    animation: textPulse 2s ease-in-out infinite;
+    letter-spacing: 5px;
+    background: linear-gradient(90deg, #ff0000, #ffff00, #00ffff, #ff00ff, #ff0000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: 400% 400%;
+    animation: rainbowText 4s linear infinite;
+}
+
+a {
+    display: inline-block;
+    animation: crazyWobble 1.2s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
+    text-decoration: none;
+    color: #ff0066;
+    font-weight: 900;
+    font-size: 2em;
+    text-shadow: 3px 3px 0 #00ffff, -3px -3px 0 #ffff00;
+    padding: 10px;
+    border: 4px dashed #ff00ff;
+    background: repeating-linear-gradient(45deg, transparent, transparent 10px, #00ff00 10px, #00ff00 20px);
+}
+
+p {
+    font-size: 2em;
+    line-height: 1.8;
+    background: linear-gradient(90deg, #ff1493 0%, #7fff00 25%, #00bfff 50%, #ff4500 75%, #da70d6 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: 400% 400%;
+    animation: pRainbow 5s ease infinite;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    transform: skew(-10deg, 2deg);
+    padding: 20px;
+    border: 8px double #00ffff;
+    background-color: rgba(255,255,255,0.1);
+}
+
+@keyframes psychoticSpin {
+    0% { background-position: 0% 0% }
+    25% { background-position: 100% 0% }
+    50% { background-position: 100% 100% }
+    75% { background-position: 0% 100% }
+    100% { background-position: 0% 0% }
+}
+
+@keyframes rainbowText {
+    0% { background-position: 0% 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0% 50% }
+}
+
+@keyframes crazyWobble {
+    0% { transform: perspective(800px) rotate3d(1, 1, 1, 25deg) scale(0.8) }
+    25% { transform: perspective(800px) rotate3d(-1, 1, -1, -35deg) scale(1.1) }
+    50% { transform: perspective(800px) rotate3d(1, -1, 1, 45deg) scale(0.9) }
+    75% { transform: perspective(800px) rotate3d(-1, -1, -1, -25deg) scale(1.2) }
+    100% { transform: perspective(800px) rotate3d(1, 1, 1, 25deg) scale(0.8) }
+}
+
+@keyframes pRainbow {
+    0% { background-position: 0% 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0% 50% }
+}
+
+@keyframes textPulse {
+    0% { transform: scale(1) skew(0deg, 0deg) }
+    50% { transform: scale(1.1) skew(5deg, -3deg) }
+    100% { transform: scale(1) skew(0deg, 0deg) }
+}
+
+* {
+    box-sizing: border-box;
+}
