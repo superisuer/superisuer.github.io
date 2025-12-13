@@ -1,34 +1,37 @@
 h1 {
-font-family: Times New Roman, serif;
+font-family: Courier New, monospace;
 font-size: 32px;
-color: #0000FF;
+color: #87CEEB;
 text-align: center;
 text-decoration: underline;
 }
 
 body {
-font-family: Arial, sans-serif;
+font-family: Courier New, monospace;
+background-color: #000000;
 margin: 20px;
 }
 
 h2 {
 font-family: Courier New, monospace;
 font-size: 24px;
-color: #FF0000;
+color: #E0FFFF;
 }
 
 p {
+font-family: Courier New, monospace;
 font-size: 16px;
-color: #000000;
+color: #F0F8FF;
 line-height: 1.5;
 }
 
 a {
-color: #008000;
+font-family: Courier New, monospace;
+color: #ADD8E6;
 text-decoration: none;
 }
 
 a:hover {
-color: #FF00FF;
+color: #00BFFF;
 text-decoration: underline;
 }
