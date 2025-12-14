@@ -1,5 +1,5 @@
 h1 {
-font-family: Courier New, monospace;
+font-family: monospace;
 font-size: 32px;
 color: #87CEEB;
 text-align: center;
@@ -7,26 +7,29 @@ text-decoration: underline;
 }
 
 body {
-font-family: Courier New, monospace;
+font-family: monospace;
 background-color: #000000;
 margin: 20px;
+display: flex;
+justify-content: center;
+min-height: 100vh;
 }
 
 h2 {
-font-family: Courier New, monospace;
+font-family: monospace;
 font-size: 24px;
 color: #E0FFFF;
 }
 
 p {
-font-family: Courier New, monospace;
+font-family: monospace;
 font-size: 16px;
 color: #F0F8FF;
 line-height: 1.5;
 }
 
 a {
-font-family: Courier New, monospace;
+font-family: monospace;
 color: #ADD8E6;
 text-decoration: none;
 }
@@ -34,4 +37,12 @@ text-decoration: none;
 a:hover {
 color: #00BFFF;
 text-decoration: underline;
+}
+
+main {
+    max-width: 60px;
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
 }
