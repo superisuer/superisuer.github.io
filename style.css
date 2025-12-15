@@ -1,48 +1,50 @@
 h1 {
-font-family: monospace;
-font-size: 32px;
-color: #87CEEB;
-text-align: center;
-text-decoration: underline;
+font-family: "Times New Roman", serif;
+font-size: 24px;
+color: #000000;
+background-color: #C0C0C0;
+margin: 2px;
+padding: 1px;
+text-align: left;
 }
 
 body {
-font-family: monospace;
-background-color: #000000;
-margin: 20px;
-display: flex;
-justify-content: center;
-min-height: 100vh;
+font-family: "Times New Roman", serif;
+background-color: #0a0a8f;
+margin: 4px;
+color: #000000;
 }
 
 h2 {
-font-family: monospace;
-font-size: 24px;
-color: #E0FFFF;
+font-family: "Times New Roman", serif;
+font-size: 18px;
+color: #000000;
+margin: 3px 0;
 }
 
 p {
-font-family: monospace;
-font-size: 16px;
-color: #F0F8FF;
-line-height: 1.5;
+font-family: "Times New Roman", serif;
+font-size: 15px;
+color: #000000;
+line-height: 1.0;
+margin: 2px 0;
 }
 
 a {
-font-family: monospace;
-color: #ADD8E6;
-text-decoration: none;
+font-family: "Times New Roman", serif;
+color: #0000FF;
+text-decoration: underline;
 }
 
 a:hover {
-color: #00BFFF;
+color: #FF0000;
 text-decoration: underline;
 }
 
 main {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
-    width: 100%;
-    box-sizing: border-box;
+width: 95%;
+margin: 0;
+padding: 5px;
+background-color: #FFFFFF;
+border: 1px solid #000000;
 }

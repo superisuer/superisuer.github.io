@@ -1,4 +1,4 @@
-const snowflakes = ['*', '+', '.'];
+const snowflakes = ['linux', 'huker', '.'];
 const body = document.body;
     
 function createSnowflake() {
@@ -7,10 +7,11 @@ function createSnowflake() {
     snowflake.style.position = 'fixed';
     snowflake.style.top = '-20px';
     snowflake.style.left = Math.random() * window.innerWidth + 'px';
-    snowflake.style.fontSize = (Math.random() * 20 + 10) + 'px';
-    snowflake.style.color = '#FFFFFF';
-    snowflake.style.opacity = Math.random() * 0.5 + 0.3;
+    snowflake.style.fontSize = (Math.random() * 20) + 'px';
+    snowflake.style.color = '#000000';
+    snowflake.style.opacity = Math.random() * 0.3 + 0.3;
     snowflake.style.zIndex = '9999';
+    snowflake.style.transformOrigin = 'center';
     
     body.appendChild(snowflake);
     
@@ -18,10 +19,10 @@ function createSnowflake() {
     const endLeft = Math.random() * window.innerWidth;
     
     const animation = snowflake.animate([
-        { top: '-20px', left: snowflake.style.left }, 
-        { top: window.innerHeight + 'px', left: endLeft + 'px' }
+        { top: '-20px', left: snowflake.style.left, transform: 'rotate(0deg)' }, 
+        { top: window.innerHeight + 'px', left: endLeft + 'px', transform: 'rotate(720deg)' }
     ], {
-        duration: duration * 1000,
+        duration: duration * 2000,
         easing: 'linear'
     });
     
@@ -30,4 +31,4 @@ function createSnowflake() {
     };
 }
 
-setInterval(createSnowflake, 100);
+setInterval(createSnowflake, 350);
