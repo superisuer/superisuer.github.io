@@ -11,6 +11,7 @@ body {
     min-height: 100vh;
     overflow-x: hidden;
     position: relative;
+    min-width: 280px; 
 }
 
 .checkmark-container {
@@ -79,8 +80,18 @@ h1 {
     }
 }
 
+@media (max-width: 356px) {
+    .content {
+        grid-template-columns: 0fr;
+    }
+
+    .bio-card, .skills-card, .experience-card, .contacts-card {
+        padding: 1.9rem !important;
+    }
+}
+
 .bio-card, .skills-card, .experience-card, .contacts-card {
-    background-color: rgba(20, 20, 20, 0.85);
+    background-color: rgba(17, 17, 17, 0.85);
     border-radius: 12px;
     padding: 2rem;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
