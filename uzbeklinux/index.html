@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Uzbek Linux</title>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    overflow-y: auto; 
+  }
+
+  header {
+    text-align: center;
+    padding: 2rem 1rem 1rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+    color: #4caf50;
+    margin: 0.5rem 0;
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: #b0b0b0;
+  }
+
+  section.hero {
+    text-align: center;
+    max-width: 800px;
+    margin: 2rem auto;
+    font-size: 1.1rem;
+    color: #c0c0c0;
+  }
+
+  .buttons {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .buttons a {
+    display: inline-block;
+    background-color: #1f1f1f;
+    color: #4caf50;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    margin: 0.5rem;
+    border-radius: 8px;
+    transition: 0.3s;
+  }
+
+  .buttons a:hover {
+    background-color: #2a2a2a;
+    color: #a5d6a7;
+  }
+
+  .features {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 2rem;
+  }
+
+  .feature {
+    background: #1f1f1f;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    width: 220px;
+    text-align: center;
+  }
+
+  .feature h3 {
+    color: #4caf50;
+  }
+
+  .check {
+    position: absolute;
+    font-size: 1.5rem;
+    opacity: 0.8;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  footer {
+    text-align: center;
+    margin: 4rem 0 2rem;
+    color: #707070;
+    font-size: 0.9rem;
+  }
+
+  footer a {
+    color: #4caf50;
+    text-decoration: none;
+  }
+  footer a:hover {
+    color: #a5d6a7;
+  }
+
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Uzbek Linux</h1>
+  <p>HALAL Linux experience. Lightweight, fast & fun!</p>
+</header>
+
+<section class="hero">
+  <p>✅Uzbek Linux – это халяль дистрибутив для настоящих узбеков.✅✅Da.✅ Лёгкий, быстрый и безопасный.</p>
+  <p>✅Используй <strong>halalfetch</strong> для отображения системы (fastfetch - харам✅), <strong>uzbekInstall</strong> для установки.</p>
+  <p>Следуй HALAL философии: меньше HARAM, больше продуктивности ✅✅✅✅</p>
+</section>
+
+<div class="buttons">
+  <a href="https://github.com/UzbekLinux" target="_blank">GipHot</a>
+  <a href="https://github.com/superisuer/uzbek-apps" target="_blank">Halal Apps</a>
+  <a href="https://t.me/uzbeklinux" target="_blank">ISO x86_64</a>
+</div>
+
+<div class="features">
+  <div class="feature">
+    <h3>halalfetch</h3>
+    <p>халяльная замена тупому фастфетчу и только на Uzbek Linux!</p>
+  </div>
+  <div class="feature">
+    <h3>uzbekinstall</h3>
+    <p>наконец-то самый быстрый установщик Uzbek Linux.</p>
+  </div>
+  <div class="feature">
+    <h3>SPM</h3>
+    <p>встроен SPM (shit package manager), где вы можете скачать халяль софт</p>
+  </div>
+  <div class="feature">
+    <h3>arch-baZed</h3>
+    <p>базирован на арч ленуксе и поэтому самый лучший и красивый</p>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 Uzbek Linux • <a href="https://github.com/UzbekLinux">GipHot Org</a> • <a href="https://t.me/uzbeklinux">Telegram ISO</a></p>
+</footer>
+
+<script>
+  const numChecks = 20; 
+  const emoji = "✅";
+
+  for(let i=0;i<numChecks;i++){
+    const span = document.createElement("span");
+    span.className = "check";
+    span.style.left = Math.random()*100+"vw";
+    span.style.top = Math.random()*100+"vh";
+    span.style.fontSize = (Math.random()*20+15)+"px";
+    span.speedX = (Math.random()-0.5)*0.5;
+    span.speedY = -(Math.random()*1);
+    span.innerText = emoji;
+    document.body.appendChild(span);
+  }
+
+  function animateChecks() {
+    document.querySelectorAll('.check').forEach(c=>{
+      let left = parseFloat(c.style.left);
+      let top = parseFloat(c.style.top);
+      left += c.speedX;
+      top += c.speedY;
+      if(top < -10) top = 100;
+      if(left < -5) left = 100; 
+      if(left > 100) left = 0;
+      c.style.left = left + "vw";
+      c.style.top = top + "vh";
+    });
+    requestAnimationFrame(animateChecks);
+  }
+
+  animateChecks();
+</script>
+
+
+</body>
+</html>
